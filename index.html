@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coração Ucraniano</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap');</style>
+</head>
+<body>
+  
+  <header>
+    <img class="icone" src="img/logo.png" alt="logo">
+    <h1><b>Coração Ucraniano</b></h1>
+    <h3><i>"Lutando pela paz"</i></h3>
+  </header>
+  
+  <main class="container">
+    <div class="main1">
+      <h2><b>Sobre Nós</b></h2>
+      <p>Somos uma ONG voltada para doação de suprimentos aos refugiados ucranianos, nosso trabalho é defender os direitos humanos básicos dessas pessoas deslocadas, garantindo que eles não passem necessidade, visando o bem estar desse povo</p><br>
+      <img class="imgr" src="img/refugiados.png" alt="img refugiados">
+    </div>
+    <div class="main2">
+      <div>
+        <h2><b>Escolha O Que Você Deseja Doar</b></h2>
+        <label>1kg de Arroz: <input id="quantarroz" type="number" min="0"> x R$ 6,00</label><br><br>
+        <label>1kg de Feijão: <input id="quantfeijao" type="number" min="0"> x R$ 8,00</label><br><br>
+        <label>1kg de Macarrão: <input id="quantmacarrao" type="number" min="0"> x R$ 10,00</label>
+      </div><br>
+      <div>
+        <p><b>Preço Total: </b> R$ <span id="resultado"></span></p>
+        <button onclick="calcular()">Calcular</button>
+      </div>
+      <div class="pagamento">
+        <h2><b>Informações do Pagamento</b></h2>
+        <label>Número do Cartão: <input id="numerocartao" type="text"></label><br><br>
+        <label>Nome do Titular: <input id="nome" type="text"></label><br><br>
+        <label>CPF do Titular: <input id="cpf" type="text"></label><br><br>
+        <label>Validade: <input id="validade" type="text"></label><br><br>
+        <label>CVV: <input id="cvv" type="text"></label><br><br>
+        <label><input class="checkbox" type="checkbox"><i> Declaro que li e aceito a Política de Doações e a Política de Privacidade</i></label><br>
+        <button onclick="doar()">Doe Agora</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="margem_rodape">
+      <p><b>Acompanhe Nosso Trabalho nas Nossas Redes Sociais</b></p>
+      <div class="rodape">
+        <img class="icones" src="img/youtube.png" alt="icone youtube"> Coração Ucraniano
+        <img class="icones" src="img/facebook.png" alt="icone facebook"> Coração Ucraniano
+        <img class="icones" src="img/instagram.png" alt="icone instgram"> @coracao_ucraniano
+        <img class="icones" src="img/twitter.png" alt="icone twitter"> @coracao_ucraniano
+      </div>
+      <p>Todos os Direitos Reservados &copy; 2022 Coração Ucraniano</p>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
